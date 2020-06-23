@@ -19,19 +19,19 @@
     <div>
         <!-- this is the intro vedio -->
         <div class="videoBgWrapper">
-            <video controls autoplay id="introVideo">
+            <!-- <video controls autoplay id="introVideo">
                 <source src="assets/videos/Intro.ogg" type="video/ogg">
                 <source src="assets/videos/Intro.mp4" type="video/mp4">
                 Your browser does not support HTML5 video.
                 
-              </video>
-              <button id="myBtn" onclick="myFunction()">X</i></button>
+              </video> -->
+              <button id="myBtn" onclick="myFunction()">Click to Start</i></button>
              
         </div>
        
     <div class="container-fluid" id="mainpage">
-        <div class="row" style="background-color: #4c4e4d;">
-            <!-- <div class="col-md-12"> -->
+
+        <div class="row headingBg">
                 <div class="content col-md-2">
                     <div class="button">
                         <div class="line first top"></div>
@@ -39,13 +39,21 @@
                     </div>
                 </div>
                 <div class="heading text-center my-auto col-md-8" >
-                    <h1 class="headingText"> Box Explained</h1> 
+                    <h1 class="headingImg"> <img src="assets/images/heading.png" alt="" srcset=""></h1> 
+                </div>
+                <div class="Mheading text-center my-auto col-md-8" >
+                    <h1 class="MheadingImg"> <img src="assets/images/heading.png" alt="" srcset=""></h1> 
                 </div>
 
-                
-            <!-- </div> -->
         </div>
-
+        <div class="row">
+            <video controls autoplay id="mainpagevideo">
+                <source src="assets/videos/Intro.ogg" type="video/ogg">
+                <source src="assets/videos/Intro.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+                
+              </video>
+        </div>
         <div class="row">
             
             <div class="col-md-2">
@@ -125,12 +133,12 @@
            
             <div class="col-md-12">
                
-                <div class="row">
-                    <div class="col-md-3 episode1Text">
+                <div class="row epioside1">
+                    <div class="col-lg-3 col-md-4 col-sm-6 episode1Text">
                         <h3>Memes Disected</h3>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id beatae asperiores omnis, ipsa enim quo voluptatum veniam alias doloribus amet perferendis delectus rem? Possimus impedit dolorum pariatur rem soluta?
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         
                         <div class="flip-box mx-auto d-block" id="memelord" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
                             <div class="flip-box-inner">
@@ -145,7 +153,7 @@
                     </div>
                     
                
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div  class="flip-box mx-auto d-block " id="boomer" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
                             <div class="flip-box-inner">
                             <div class="flip-box-front video2">
@@ -160,7 +168,7 @@
                     
                      
 
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="flip-box mx-auto d-block" id="professor" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
                             <div class="flip-box-inner">
                             <div class="flip-box-front video3">
@@ -171,6 +179,55 @@
                             </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row epioside1">
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        
+                        <div class="flip-box mx-auto d-block" id="memelord" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
+                            <div class="flip-box-inner">
+                            <div class="flip-box-front video1">
+                                
+                            </div>
+                            <div class="flip-box-back video1 blur">
+                                <h2>GenZ "Memelord"</h2>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div  class="flip-box mx-auto d-block " id="boomer" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
+                            <div class="flip-box-inner">
+                            <div class="flip-box-front video2">
+                                
+                            </div>
+                            <div class="flip-box-back video2">
+                                <h2>Boomer</h2>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="flip-box mx-auto d-block" id="professor" onmouseover="aboutboomer()" onmouseout="hideaboutb()">
+                            <div class="flip-box-inner">
+                            <div class="flip-box-front video3">
+                                
+                            </div>
+                            <div class="flip-box-back video3">
+                                <h2>Professor</h2>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 episode1Text">
+                        <h3>Memes Disected</h3>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum id beatae asperiores omnis, ipsa enim quo voluptatum veniam alias doloribus amet perferendis delectus rem? Possimus impedit dolorum pariatur rem soluta?
                     </div>
                 </div>
             </div>

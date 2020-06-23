@@ -7,6 +7,8 @@ body{
   font-family:"Roboto";
   color: #000;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 
   /* animation: fadeInAnimation ease 5s; 
   animation-iteration-count: 1; 
@@ -29,6 +31,7 @@ body{
   left: 0;
   bottom: 0;
   padding: 0;
+  padding-top: 100px;
   overflow: hidden;
   background: #4c4e4d;
   width: 250px;
@@ -37,12 +40,12 @@ body{
   -webkit-transform: translateZ(0) translateX(-100%);
   transform: translateZ(0) translateX(-100%);
   text-align:center;
-  box-shadow: 0 0 10px #000;
+  /* box-shadow: 0 0 10px #000; */
 }
 
-h1{
+/* h1{
   margin-top:150px;
-}
+} */
 
 
 ul{
@@ -84,7 +87,8 @@ a:hover{
 .button{
   width:50px;
   height:50px;
-  margin:70px 97px;
+  margin: 10px 97px;
+  margin-bottom: 50px;
   padding: 10px;
   cursor:pointer;
 }
@@ -110,14 +114,21 @@ a:hover{
 }
 
 /* ------------------- */
+.epioside1{
+  /* height:30vh; */
+  margin-top: 5%;
+  /* border-bottom: 1px solid black; */
+}
+#mainpagevideo{
 
-  
+}
+/* -------------------- */
 .flip-box {
   /* border-radius: 5%; */
   margin-top: 8%;
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 320px;
+  height: 210px;
   perspective: 1000px;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   /* box-shadow: 5px 10px #888888; */
@@ -137,7 +148,7 @@ a:hover{
 }
 
 .flip-box-front, .flip-box-back {
-  box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2);
+  /* box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, .2); */
   /* border-radius: 5%; */
   position: absolute;
   width: 100%;
@@ -206,6 +217,7 @@ a:hover{
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: #000;
   overflow: hidden;
   z-index: -100;
 }
@@ -225,15 +237,15 @@ a:hover{
 
 #myBtn {
   position: absolute;
-  right:    0;
-  top:   0;
-  width: 2rem;
+  right:    40%;
+  top:   40%;
+  width: 20rem;
   font-size: 1.5rem;
   border: none;
-  background: #ddd;
+  background: #000;
   color: #fff;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #myBtn:hover {
@@ -263,29 +275,29 @@ a:hover{
   width: 100%;
 }
 .heading h1{
-  margin-top: 5%;
+  /* margin-top: 2%; */
   margin-bottom: auto; 
-  font-size: 5rem;
+  font-size: 3rem;
   /* font-style: na; */
 }
 
 footer{
-  position: fixed;
+  /* position: fixed; */
   height: 5vh;
   bottom: 0;
   left: 0;
-  width: 100%;
-  background-color: #4c4e4d;
+  width: 100vw;
+  background-color: #bbbbbb;
   text-align: center;
   padding: 1%;
-  margin-top: 4%;
-  z-index: -10;
+  margin-top: 5vh;
+  /* z-index: -10; */
 
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #4c4e4d;
+  background-color: #bbbbbb;
   position: relative;
 }
 
@@ -302,7 +314,7 @@ footer{
 }
 
 .topnav a.icon {
-  background: #4c4e4d;
+  background: #bbbbbb;
   display: block;
   position: absolute;
   right: 0;
@@ -311,7 +323,7 @@ footer{
 
 .topnav a:hover {
   background-color: #ddd;
-  color: #4c4e4d;
+  color: #bbbbbb;
 } 
 .mobile-container{
   display: none;
@@ -344,16 +356,22 @@ footer{
   display: none;
 }
 .headingBg{
-  background-color: #4c4e4d;
+  background-color: #000;
+  height: 10vh;
   /* z-index: ; */
 }
 .episode1Text{
   margin-top: 2%;
   margin-left: 0%;
 }
+.headingImg img{
+  margin-top: -40px;
+  height: 8%;
+  width: 40%;
+}
 @media screen and (max-width: 1100px) and (min-width: 770px) { 
    .heading h1{
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-bottom: auto; 
     margin-left: auto;
     font-size: 3rem;
@@ -366,7 +384,8 @@ footer{
     display: none;
   }
   .button{
-    margin-left: 9%;
+    /* margin-top: -5%; */
+    margin-left: 19%;
   }
   /* .mobile-container{
     display: inline-block;
@@ -385,17 +404,23 @@ footer{
 }
 @media only screen and (max-width: 770px) {
   .heading h1{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    display: none;
   }
   .Mheading h1{
     /* margin-top: 5%; */
     position: absolute;
-    top: -5vh;
+    top: -8vh;
     left: 30vw;
     font-size: 2rem;
     display: block;
     /* font-style: na; */
   }  
+  .MheadingImg img{
+    margin-top: -80px;
+    height: 8%;
+    width: 40%;
+  }
   .menu{
     display: none;
   }
@@ -404,11 +429,12 @@ footer{
   }
   .mobile-container{
     display: inline-block;
-    background-color: #4c4e4d;
+    background-color: #bbbbbb;
     width: 100%;
   }
   #about{
     padding-bottom: 10%;
+    height: 100vh;
   }
   #about h2{
     font-size: 1.5rem;
@@ -416,7 +442,8 @@ footer{
   .button{
     width:50px;
     height:50px;
-    margin:70px 27px;
+    /* margin:20px 7px; */
+    margin-left: 30px;
     padding: 10px;
     cursor:pointer;
     z-index: 10000;

@@ -4,6 +4,7 @@ let team = $("#team")
 let contact = $("#contact")
 
 let mainpage = $("#mainpage");
+let mainpagevideo = $("#mainpagevideo")
 
 let video = document.getElementById("introVideo");
 let video1 = $("#video1");
@@ -20,11 +21,14 @@ function expand(){
     
     if (!$( ".menu" ).hasClass( "active" )){
         content.fadeIn(500);
+        // mainpagevideo.fadeIn(500);
         contact.fadeOut(00);
         about.fadeOut( 0 );
         team.fadeOut(0);
     }else{
         content.fadeOut(500);
+        // mainpagevideo.fadeOut(500);
+        // mainpagevideo.pause();
         about.slideUp( 300 ).delay( 400 ).fadeIn( 400 );
     }
     var x = document.getElementById("myLinks");
@@ -87,7 +91,7 @@ document.getElementById("Mcontactbtn").addEventListener("click",()=>{
 })
 
 function myFunction(){
-    document.getElementById("introVideo").pause(); 
+    document.getElementById("mainpagevideo").play(); 
     invideo.fadeOut(1000);
     mainbtn.fadeOut(1000);
     document.getElementById("video1btn").pause(); 
@@ -99,13 +103,13 @@ function myFunction(){
     mainpage.fadeIn(2000);
 }
 
-video.onended = function() {
-    document.getElementById("introVideo").pause(); 
-    invideo.fadeOut(1000);
-    mainbtn.fadeOut(1000);
-    mainpage.fadeIn(3000);
+// video.onended = function() {
+//     document.getElementById("introVideo").pause(); 
+//     invideo.fadeOut(1000);
+//     mainbtn.fadeOut(1000);
+//     mainpage.fadeIn(3000);
     
-};
+// };
 
 let indd = $("#instructions");
 let abtt = $("#AboutBoomer");
