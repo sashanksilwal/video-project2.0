@@ -4,7 +4,7 @@ let team = $("#team")
 let contact = $("#contact")
 
 let mainpage = $("#mainpage");
-let mainpagevideo = $("#mainpagevideo")
+let mainpagevideo = $("#mainpagevideo") 
 
 let video = document.getElementById("introVideo");
 let video1 = $("#video1");
@@ -21,14 +21,16 @@ function expand(){
     
     if (!$( ".menu" ).hasClass( "active" )){
         content.fadeIn(500);
-        // mainpagevideo.fadeIn(500);
+        mainpagevideo.fadeIn(500);
+        document.getElementById("mainpagevideo").play();
         contact.fadeOut(00);
         about.fadeOut( 0 );
         team.fadeOut(0);
     }else{
         content.fadeOut(500);
-        // mainpagevideo.fadeOut(500);
-        // mainpagevideo.pause();
+        document.getElementById("mainpagevideo").pause();
+        mainpagevideo.fadeOut(500);
+        
         about.slideUp( 300 ).delay( 400 ).fadeIn( 400 );
     }
     var x = document.getElementById("myLinks");
