@@ -3,9 +3,9 @@
   margin: 0;
 }
 body{
-  background-color:#28363D;
+  /* background-color:#28363D; */
   font-family:"Roboto";
-  color: #fff;
+  color: #000;
   box-sizing: border-box;
 
   /* animation: fadeInAnimation ease 5s; 
@@ -30,7 +30,7 @@ body{
   bottom: 0;
   padding: 0;
   overflow: hidden;
-  background: #212121;
+  background: #4c4e4d;
   width: 250px;
   box-sizing: border-box;
   transition: all 250ms;
@@ -62,6 +62,7 @@ a{
   font-weight: 300;
 }
 a:hover{
+  color: yellow;
   text-decoration: line-through;
 }
 #mainpage{
@@ -154,7 +155,7 @@ a:hover{
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: yellow;
   color: white;
   transform: rotateY(180deg);
   filter: grayscale(90%);
@@ -274,16 +275,17 @@ footer{
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #212121;
+  background-color: #4c4e4d;
   text-align: center;
   padding: 1%;
   margin-top: 4%;
+  z-index: -10;
 
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #4c4e4d;
   position: relative;
 }
 
@@ -300,7 +302,7 @@ footer{
 }
 
 .topnav a.icon {
-  background: black;
+  background: #4c4e4d;
   display: block;
   position: absolute;
   right: 0;
@@ -309,7 +311,7 @@ footer{
 
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #4c4e4d;
 } 
 .mobile-container{
   display: none;
@@ -342,8 +344,12 @@ footer{
   display: none;
 }
 .headingBg{
-  background-color: #000;
+  background-color: #4c4e4d;
   /* z-index: ; */
+}
+.episode1Text{
+  margin-top: 2%;
+  margin-left: 0%;
 }
 @media screen and (max-width: 1100px) and (min-width: 770px) { 
    .heading h1{
@@ -398,7 +404,7 @@ footer{
   }
   .mobile-container{
     display: inline-block;
-    background-color: #212121;
+    background-color: #4c4e4d;
     width: 100%;
   }
   #about{
