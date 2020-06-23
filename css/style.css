@@ -115,13 +115,18 @@ a:hover{
 
 /* ------------------- */
 .epioside1{
-  /* height:30vh; */
+  height:40vh;
   margin-top: 5%;
   /* border-bottom: 1px solid black; */
 }
-#mainpagevideo{
-
+#video-container-zoomer, #video-container-boomer, #video-container-prof{
+  display: none;
 }
+
+/* .video-size{
+  width: 100vw;
+  height: 80vh;
+} */
 /* -------------------- */
 .flip-box {
   /* border-radius: 5%; */

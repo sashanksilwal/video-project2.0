@@ -14,6 +14,12 @@ let mainbtn = $("#myBtn");
 let invideo =$("#introVideo");
 
 
+let prof_container = $("#video-container-prof");
+let zoomer_container = $("#video-container-zoomer");
+let boomer_container = $("#video-container-boomer");
+let intro_container = $("#video-container");
+
+
 
 function expand(){
     $(this).toggleClass("on");
@@ -46,16 +52,46 @@ function expand(){
 $(".button").on('click', expand);
 
 document.getElementById("boomer").addEventListener("click",()=>{
-    mainpage.fadeOut(0);
-    video1.fadeIn(100);
+    // mainpage.fadeOut(0);
+    // video1.fadeIn(100);
+
+    intro_container.fadeOut(0);
+    zoomer_container.fadeOut(0);
+    prof_container.fadeOut(0);
+    boomer_container.fadeIn(3000);
+    document.getElementById("mainpagevideo").pause();
+    document.getElementById("mainpagevideo-zoomer").pause();
+    document.getElementById("mainpagevideo-prof").pause();
+
+    document.getElementById("mainpagevideo-boomer").play();
+
 })
 document.getElementById("memelord").addEventListener("click",()=>{
-    mainpage.fadeOut(0);
-    video2.fadeIn(100);
+    // mainpage.fadeOut(0);
+    // video2.fadeIn(100);
+
+
+    intro_container.fadeOut(0);
+    prof_container.fadeOut(0);
+    boomer_container.fadeOut(0);
+    zoomer_container.fadeIn(3000);
+    document.getElementById("mainpagevideo").pause();
+    document.getElementById("mainpagevideo-prof").pause();
+    document.getElementById("mainpagevideo-boomer").pause();
+
+    document.getElementById("mainpagevideo-zoomer").play();
 })
 document.getElementById("professor").addEventListener("click",()=>{
-    mainpage.fadeOut(0);
-    video3.fadeIn(100);
+    intro_container.fadeOut(0);
+    zoomer_container.fadeOut(0);
+    boomer_container.fadeOut(0);
+    prof_container.fadeIn(3000);
+    document.getElementById("mainpagevideo").pause();
+    document.getElementById("mainpagevideo-zoomer").pause();
+    document.getElementById("mainpagevideo-boomer").pause();
+
+    document.getElementById("mainpagevideo-prof").play();
+
 })
 
 document.getElementById("teambtn").addEventListener("click",()=>{
@@ -97,12 +133,12 @@ function myFunction(){
     invideo.fadeOut(0);
     mainbtn.fadeOut(0);
     
-    document.getElementById("video1btn").pause(); 
-    document.getElementById("video2btn").pause(); 
-    document.getElementById("video3btn").pause(); 
-    video1.fadeOut(0);
-    video2.fadeOut(0);
-    video3.fadeOut(0);
+    // document.getElementById("video1btn").pause(); 
+    // document.getElementById("video2btn").pause(); 
+    // document.getElementById("video3btn").pause(); 
+    // video1.fadeOut(0);
+    // video2.fadeOut(0);
+    // video3.fadeOut(0);
     mainpage.fadeIn(1000);
     document.getElementById("background").style.backgroundColor = "white";
 }
@@ -126,4 +162,4 @@ function hideaboutb(){
     abtt.fadeOut(0);
     indd.fadeIn(0);
 }
-    
+
