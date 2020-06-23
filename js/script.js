@@ -94,15 +94,17 @@ document.getElementById("Mcontactbtn").addEventListener("click",()=>{
 
 function myFunction(){
     document.getElementById("mainpagevideo").play(); 
-    invideo.fadeOut(1000);
-    mainbtn.fadeOut(1000);
+    invideo.fadeOut(0);
+    mainbtn.fadeOut(0);
+    
     document.getElementById("video1btn").pause(); 
     document.getElementById("video2btn").pause(); 
     document.getElementById("video3btn").pause(); 
     video1.fadeOut(0);
     video2.fadeOut(0);
     video3.fadeOut(0);
-    mainpage.fadeIn(2000);
+    mainpage.fadeIn(1000);
+    document.getElementById("background").style.backgroundColor = "white";
 }
 
 // video.onended = function() {
