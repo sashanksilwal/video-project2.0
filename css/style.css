@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
   /* background-color:#28363D; */
   font-family:"Roboto";
@@ -63,6 +66,9 @@ a{
   font-family:"Roboto";
   font-size: 18px;
   font-weight: 300;
+}
+.remove-layout{
+  all: revert;
 }
 a:hover{
   color: yellow;
@@ -302,7 +308,7 @@ footer{
   bottom: 0;
   left: 0;
   width: 100vw;
-  background-color: #bbbbbb;
+  background-color: black;
   text-align: center;
   padding: 1%;
   margin-top: 5vh;

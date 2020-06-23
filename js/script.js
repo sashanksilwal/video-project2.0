@@ -19,6 +19,30 @@ let zoomer_container = $("#video-container-zoomer");
 let boomer_container = $("#video-container-boomer");
 let intro_container = $("#video-container");
 
+let intro_video = document.getElementById("mainpagevideo");
+let prof_video = document.getElementById("mainpagevideo-prof");
+let zoomer_video = document.getElementById("mainpagevideo-zoomer");
+let boomer_video = document.getElementById("mainpagevideo-boomer");
+
+intro_video.onended = function(){
+    var elmnt = document.getElementById("content");
+    elmnt.scrollIntoView();
+};
+
+prof_video.onended = function() {
+    var elmnt = document.getElementById("content");
+    elmnt.scrollIntoView();
+};
+
+zoomer_video.onended = function(){
+    var elmnt = document.getElementById("content");
+    elmnt.scrollIntoView();
+};
+
+boomer_video.onended = function() {
+    var elmnt = document.getElementById("content");
+    elmnt.scrollIntoView();
+};
 
 
 function expand(){
@@ -63,6 +87,7 @@ document.getElementById("boomer").addEventListener("click",()=>{
     document.getElementById("mainpagevideo-zoomer").pause();
     document.getElementById("mainpagevideo-prof").pause();
 
+    document.getElementById("mainpagevideo-boomer").currentTime = 0;
     document.getElementById("mainpagevideo-boomer").play();
 
 })
@@ -79,6 +104,7 @@ document.getElementById("memelord").addEventListener("click",()=>{
     document.getElementById("mainpagevideo-prof").pause();
     document.getElementById("mainpagevideo-boomer").pause();
 
+    document.getElementById("mainpagevideo-zoomer").currentTime = 0;
     document.getElementById("mainpagevideo-zoomer").play();
 })
 document.getElementById("professor").addEventListener("click",()=>{
@@ -90,6 +116,7 @@ document.getElementById("professor").addEventListener("click",()=>{
     document.getElementById("mainpagevideo-zoomer").pause();
     document.getElementById("mainpagevideo-boomer").pause();
 
+    document.getElementById("mainpagevideo-prof").currentTime = 0;
     document.getElementById("mainpagevideo-prof").play();
 
 })
