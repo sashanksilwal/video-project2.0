@@ -191,10 +191,11 @@ a:hover{
     background-image: url("../assets/images/professor_img.png");
 }
 
-#about{
+#about, #team, #contact{
     margin-top: 15%;
     margin-left: 10%;
     margin-right: 10%;
+    height: 80vh;
     display: none;
     overflow: scroll;
 }
