@@ -18,16 +18,19 @@ let prof_container = $("#video-container-prof");
 let zoomer_container = $("#video-container-zoomer");
 let boomer_container = $("#video-container-boomer");
 let intro_container = $("#video-container");
+let ending_container = $("#video-container-end");
 
 let intro_video = document.getElementById("mainpagevideo");
 let prof_video = document.getElementById("mainpagevideo-prof");
 let zoomer_video = document.getElementById("mainpagevideo-zoomer");
 let boomer_video = document.getElementById("mainpagevideo-boomer");
+let ending_video = document.getElementById("mainpagevideo-end")
 
 let mainVid_active = true;
 let prof_active = false;
 let zoomer_active = false;
 let boomer_active = false;
+let end_active = false;
 
 intro_video.onended = function(){
     var elmnt = document.getElementById("content");
@@ -66,21 +69,25 @@ function expand(){
     if (!$( ".menu" ).hasClass( "active" )){
         content.fadeIn(500);
         mainpagevideo.fadeIn(500);
-        if (prof_active == false && zoomer_active == false && boomer_active == false){
+        if (prof_active == false && zoomer_active == false && boomer_active == false && end_active == false){
             document.getElementById("mainpagevideo").play();
         }
-        if (prof_active == true && zoomer_active == false && boomer_active == false){
+        if (prof_active == true && zoomer_active == false && boomer_active == false && end_active == false){
             prof_container.fadeIn(0);
             document.getElementById("mainpagevideo-prof").play();
         }
-        if (prof_active == false && zoomer_active == true && boomer_active == false){
+        if (prof_active == false && zoomer_active == true && boomer_active == false && end_active == false){
             zoomer_container.fadeIn(0);
             document.getElementById("mainpagevideo-zoomer").play();
 
         }
-        if (prof_active == false && zoomer_active == false && boomer_active == true){
+        if (prof_active == false && zoomer_active == false && boomer_active == true && end_active == false){
             boomer_container.fadeIn(0);
             document.getElementById("mainpagevideo-boomer").play();
+        }
+        if (prof_active == false && zoomer_active == false && boomer_active == false && end_active == true){
+            ending_container.fadeIn(0);
+            document.getElementById("mainpagevideo-end").play();
         }
         contact.fadeOut(0);
         about.fadeOut( 0 );
@@ -91,11 +98,13 @@ function expand(){
         document.getElementById("mainpagevideo-prof").pause();
         document.getElementById("mainpagevideo-zoomer").pause();
         document.getElementById("mainpagevideo-boomer").pause();
+        document.getElementById("mainpagevideo-end").pause();
         mainpagevideo.fadeOut(500);
         content.fadeOut(500);
         zoomer_container.fadeOut(500);
         boomer_container.fadeOut(500);
         prof_container.fadeOut(500);
+        ending_container.fadeOut(500);
         about.slideUp( 300 ).delay( 400 ).fadeIn( 400 );
     }
     var x = document.getElementById("myLinks");
@@ -117,14 +126,17 @@ document.getElementById("boomer").addEventListener("click",()=>{
     boomer_active = true;
     prof_active = false;
     zoomer_active = false;
+    end_active = false;
 
     intro_container.fadeOut(0);
     zoomer_container.fadeOut(0);
     prof_container.fadeOut(0);
+    ending_container.fadeOut(0);
     boomer_container.fadeIn(3000);
     document.getElementById("mainpagevideo").pause();
     document.getElementById("mainpagevideo-zoomer").pause();
     document.getElementById("mainpagevideo-prof").pause();
+    document.getElementById("mainpagevideo-end").pause();
 
     document.getElementById("mainpagevideo-boomer").currentTime = 0;
     document.getElementById("mainpagevideo-boomer").play();
@@ -136,14 +148,17 @@ document.getElementById("memelord").addEventListener("click",()=>{
     prof_active = false;
     zoomer_active = true;
     boomer_active = false;
+    end_active = false;
 
     intro_container.fadeOut(0);
     prof_container.fadeOut(0);
     boomer_container.fadeOut(0);
+    ending_container.fadeOut(0)
     zoomer_container.fadeIn(3000);
     document.getElementById("mainpagevideo").pause();
     document.getElementById("mainpagevideo-prof").pause();
     document.getElementById("mainpagevideo-boomer").pause();
+    document.getElementById("mainpagevideo-end").pause();
 
     document.getElementById("mainpagevideo-zoomer").currentTime = 0;
     document.getElementById("mainpagevideo-zoomer").play();
@@ -152,16 +167,40 @@ document.getElementById("professor").addEventListener("click",()=>{
     prof_active = true;
     zoomer_active = false;
     boomer_active = false;
+    end_active = false;
     intro_container.fadeOut(0);
     zoomer_container.fadeOut(0);
     boomer_container.fadeOut(0);
+    ending_container.fadeOut(0)
     prof_container.fadeIn(3000);
     document.getElementById("mainpagevideo").pause();
     document.getElementById("mainpagevideo-zoomer").pause();
     document.getElementById("mainpagevideo-boomer").pause();
+    document.getElementById("mainpagevideo-end").pause();
 
     document.getElementById("mainpagevideo-prof").currentTime = 0;
     document.getElementById("mainpagevideo-prof").play();
+
+})
+document.getElementById("ending").addEventListener("click",()=>{
+    prof_active = false;
+    zoomer_active = false;
+    boomer_active = false;
+    end_active = true;
+    intro_container.fadeOut(0);
+    zoomer_container.fadeOut(0);
+    boomer_container.fadeOut(0);
+    prof_container.fadeOut(0);
+    ending_container.fadeIn(3000);
+    document.getElementById("mainpagevideo").pause();
+    document.getElementById("mainpagevideo-zoomer").pause();
+    document.getElementById("mainpagevideo-prof").pause();
+    document.getElementById("mainpagevideo-boomer").pause();
+    
+    
+
+    document.getElementById("mainpagevideo-end").currentTime = 0;
+    document.getElementById("mainpagevideo-end").play();
 
 })
 

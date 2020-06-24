@@ -127,12 +127,12 @@ a:hover{
 }
 .epioside2{
   /* height:40vh; */
+  margin-top: 3%;
   padding-bottom: 3%;
   background-color: #bbb;
-  margin-top: 3%;
   /* border-bottom: 1px solid black; */
 }
-#video-container-zoomer, #video-container-boomer, #video-container-prof{
+#video-container-zoomer, #video-container-boomer, #video-container-prof, #video-container-end{
   display: none;
 }
 
@@ -219,6 +219,12 @@ a:hover{
 
 .video6{
   background-image: url("../assets/images/comingSoon3.jpg");
+}
+/* .video7{
+  background-image: url("../assets/images/comingSoon3.jpg");
+} */
+.video8{
+  background-image: url("../assets/images/ending.png");
 }
 #about, #team, #contact{
     margin-top: 15%;
