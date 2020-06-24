@@ -19,12 +19,7 @@
     <div>
         <!-- this is the intro vedio -->
         <div class="videoBgWrapper" id="background">
-            <!-- <video controls autoplay id="introVideo">
-                <source src="assets/videos/Intro.ogg" type="video/ogg">
-                <source src="assets/videos/Intro.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-                
-              </video> -->
+           
               <button id="myBtn" onclick="myFunction()"><img src="assets/images/start.png" id="start"alt="" srcset=""></i></button>
              
         </div>
@@ -47,7 +42,7 @@
 
         </div>
         <div class="row video-size" id = "video-container">
-            <video controls autoplay id="mainpagevideo" style="width: 100vw; height: 100vh; margin-top: -8px;">
+            <video controls autoplay id="mainpagevideo" class="videoframe" >
                 <source id = "video-source-id" src="assets/videos/Intro.ogg" type="video/ogg">
                 <!-- <source src="assets/videos/Intro.mp4" type="video/mp4"> -->
                 Your browser does not support HTML5 video.
@@ -55,7 +50,7 @@
               </video>
         </div>
         <div class="row video-size" id = "video-container-zoomer" style="background-color: black;">
-            <video controls autoplay id="mainpagevideo-zoomer" style="width: 100vw; height: 100vh; margin-top: -8px;">
+            <video controls autoplay id="mainpagevideo-zoomer" class="videoframe">
                 <source id = "video-source-id" src="assets/videos/Interview-Meme.ogg" type="video/ogg">
                 <!-- <source src="assets/videos/Intro.mp4" type="video/mp4"> -->
                 Your browser does not support HTML5 video.
@@ -63,7 +58,7 @@
               </video>
         </div>
         <div class="row video-size" id = "video-container-boomer">
-            <video controls autoplay id="mainpagevideo-boomer" style="width: 100vw; height: 100vh; margin-top: -8px;">
+            <video controls autoplay id="mainpagevideo-boomer" class="videoframe">
                 <source id = "video-source-id" src="assets/videos/Interview-Boomer.ogg" type="video/ogg">
                 <!-- <source src="assets/videos/Intro.mp4" type="video/mp4"> -->
                 Your browser does not support HTML5 video.
@@ -71,7 +66,7 @@
               </video>
         </div>
         <div class="row video-size" id = "video-container-prof">
-            <video controls autoplay id="mainpagevideo-prof" style="width: 100vw; height: 100vh; margin-top: -8px;">
+            <video controls autoplay id="mainpagevideo-prof" class="videoframe">
                 <source id = "video-source-id" src="assets/videos/Interview-Prof.ogg" type="video/ogg">
                 <!-- <source src="assets/videos/Intro.mp4" type="video/mp4"> -->
                 Your browser does not support HTML5 video.
@@ -79,7 +74,7 @@
               </video>
         </div>
         <div class="row video-size" id = "video-container-end">
-            <video controls autoplay id="mainpagevideo-end" style="width: 100vw; height: 100vh; margin-top: -8px;">
+            <video controls autoplay id="mainpagevideo-end" class="videoframe">
                 <source id = "video-source-id" src="assets/videos/Ending.ogg" type="video/ogg">
                 <!-- <source src="assets/videos/Intro.mp4" type="video/mp4"> -->
                 Your browser does not support HTML5 video.
@@ -149,14 +144,24 @@
 
                 <div id="team">
                     <h2 class="text-center">The Team</h2>
-                    <p>
+                    <p> 
+                        <img id="cast" src="assets/images/cast.png" class="pics1" >
                         <div class="row thirdpage justify-content-between">
-                            <img id="cast" src="assets/images/cast.png" class="pics1" >
-                            <img id="Yusra" src="assets/images/Yusra.png" class="pics" >
-                    
-                            <img id="nurgazy" src="assets/images/nurgazy.png" class="pics" >
+                            <div class="col-md-4">
+                                <img id="Yusra" src="assets/images/Yusra.png" class="pics" >
+                            </div>
+                            <div class="col-md-4">
+                                <img id="nurgazy" src="assets/images/nurgazy.png" class="pics" >
+                            </div>
+                            <div class="col-md-4">
+                                <img id="sashank" src="assets/images/sashank.png" class="pics" >
+                            </div>
+
                             
-                            <img id="sashank" src="assets/images/sashank.png" class="pics" >
+                    
+                           
+                            
+                            
                     
                         </div>
                         

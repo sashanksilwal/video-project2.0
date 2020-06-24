@@ -132,6 +132,17 @@ a:hover{
   background-color: #bbb;
   /* border-bottom: 1px solid black; */
 }
+/* #video-container{
+  height:85vh;
+  width:100vw;
+} */
+.videoframe{
+  position: relative;
+  left:0;
+  top:0;
+  height:100%;
+  width: 100%;
+}
 #video-container-zoomer, #video-container-boomer, #video-container-prof, #video-container-end{
   display: none;
 }
@@ -250,7 +261,7 @@ a:hover{
     overflow: scroll;
 }
 #team{
-  margin-top: 15%;
+  /* margin-top: 15%; */
     margin-left: 10%;
     margin-right: 10%;
   display: none;
