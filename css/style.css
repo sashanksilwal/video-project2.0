@@ -514,11 +514,11 @@ footer{
     /* font-style: na; */
   }  
   .MheadingImg img{
-    /* margin-top: -80px; */
+    margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
     height: 8%;
-    width: 40%;
+    width: 50%;
   }
   .menu{
     display: none;
