@@ -238,23 +238,17 @@ function myFunction(){
     invideo.fadeOut(0);
     mainbtn.fadeOut(0);
     
-    // document.getElementById("video1btn").pause(); 
-    // document.getElementById("video2btn").pause(); 
-    // document.getElementById("video3btn").pause(); 
+    // document.getElementById("mainpagevideo").pause();
+    // document.getElementById("mainpagevideo-zoomer").pause();
+    // document.getElementById("mainpagevideo-boomer").pause();
+    // document.getElementById("mainpagevideo-professor").pause();
+    // document.getElementById("mainpagevideo-end").pause();
     // video1.fadeOut(0);
     // video2.fadeOut(0);
     // video3.fadeOut(0);
     mainpage.fadeIn(1000);
     document.getElementById("background").style.backgroundColor = "white";
 }
-
-// video.onended = function() {
-//     document.getElementById("introVideo").pause(); 
-//     invideo.fadeOut(1000);
-//     mainbtn.fadeOut(1000);
-//     mainpage.fadeIn(3000);
-    
-// };
 
 let indd = $("#instructions");
 let abtt = $("#AboutBoomer");
