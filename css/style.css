@@ -245,7 +245,7 @@ a:hover{
 }
 #about, #team, #contact{
     margin-top: 10vh;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     margin-right: 10%;
     height: 80vh;
     display: none;
@@ -480,6 +480,7 @@ footer{
   #about{
     padding-bottom: 10%;
     height: 100vh;
+    opacity: 0.5;
   }
 }
 .Mheading h1{
