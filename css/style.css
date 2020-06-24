@@ -240,7 +240,7 @@ a:hover{
 }
 #about, #team, #contact{
     margin-top: 10vh;
-    /* margin-left: 10%; */
+    margin-left: 10%;
     margin-right: 10%;
     height: 80vh;
     display: none;
