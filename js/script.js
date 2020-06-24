@@ -214,11 +214,6 @@ document.getElementById("aboutbtn").addEventListener("click",()=>{
     contact.fadeOut(00);
     team.fadeOut(0);
 })
-document.getElementById("contactbtn").addEventListener("click",()=>{
-    team.fadeOut(0);
-    about.fadeOut(0);
-    contact.fadeIn(300);
-})
 document.getElementById("Mteambtn").addEventListener("click",()=>{
     about.fadeOut( 0 );
     team.fadeIn(300);
