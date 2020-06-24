@@ -471,7 +471,7 @@ footer{
   }
 
   .content2, .content4{
-    background-color: thistle;
+    /* background-color: thistle; */
     padding: 10%;
   }
   .heading h1{
