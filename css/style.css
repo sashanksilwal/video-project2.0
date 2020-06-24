@@ -190,7 +190,7 @@ a:hover{
   margin-bottom: auto;
 }
 .video1{
-    background-image: url("../assets/images/boomer_img.png");
+    background-image: url("../assets/images/boomer_img.jpeg");
        
 }
 
@@ -201,7 +201,18 @@ a:hover{
 .video3{
     background-image: url("../assets/images/professor_img.png");
 }
+.video4{
+  background-image: url("../assets/images/comingSoon1.jpg");
+     
+}
 
+.video5{
+  background-image: url("../assets/images/comingSoon2.jpg");
+}
+
+.video6{
+  background-image: url("../assets/images/comingSoon3.jpg");
+}
 #about, #team, #contact{
     margin-top: 15%;
     margin-left: 10%;

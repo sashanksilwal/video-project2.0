@@ -24,22 +24,36 @@ let prof_video = document.getElementById("mainpagevideo-prof");
 let zoomer_video = document.getElementById("mainpagevideo-zoomer");
 let boomer_video = document.getElementById("mainpagevideo-boomer");
 
+let mainVid_active = true;
+let prof_active = false;
+let zoomer_active = false;
+let boomer_active = false;
+
 intro_video.onended = function(){
     var elmnt = document.getElementById("content");
     elmnt.scrollIntoView();
 };
 
 prof_video.onended = function() {
+    // prof_active = false;
+    // zoomer_active = false;
+    // boomer_active = false;
     var elmnt = document.getElementById("content");
     elmnt.scrollIntoView();
 };
 
 zoomer_video.onended = function(){
+    // prof_active = false;
+    // zoomer_active = false;
+    // boomer_active = false;
     var elmnt = document.getElementById("content");
     elmnt.scrollIntoView();
 };
 
 boomer_video.onended = function() {
+    // prof_active = false;
+    // zoomer_active = false;
+    // boomer_active = false;
     var elmnt = document.getElementById("content");
     elmnt.scrollIntoView();
 };
@@ -52,15 +66,36 @@ function expand(){
     if (!$( ".menu" ).hasClass( "active" )){
         content.fadeIn(500);
         mainpagevideo.fadeIn(500);
-        document.getElementById("mainpagevideo").play();
-        contact.fadeOut(00);
+        if (prof_active == false && zoomer_active == false && boomer_active == false){
+            document.getElementById("mainpagevideo").play();
+        }
+        if (prof_active == true && zoomer_active == false && boomer_active == false){
+            prof_container.fadeIn(0);
+            document.getElementById("mainpagevideo-prof").play();
+        }
+        if (prof_active == false && zoomer_active == true && boomer_active == false){
+            zoomer_container.fadeIn(0);
+            document.getElementById("mainpagevideo-zoomer").play();
+
+        }
+        if (prof_active == false && zoomer_active == false && boomer_active == true){
+            boomer_container.fadeIn(0);
+            document.getElementById("mainpagevideo-boomer").play();
+        }
+        contact.fadeOut(0);
         about.fadeOut( 0 );
         team.fadeOut(0);
     }else{
-        content.fadeOut(500);
-        document.getElementById("mainpagevideo").pause();
-        mainpagevideo.fadeOut(500);
         
+        document.getElementById("mainpagevideo").pause();
+        document.getElementById("mainpagevideo-prof").pause();
+        document.getElementById("mainpagevideo-zoomer").pause();
+        document.getElementById("mainpagevideo-boomer").pause();
+        mainpagevideo.fadeOut(500);
+        content.fadeOut(500);
+        zoomer_container.fadeOut(500);
+        boomer_container.fadeOut(500);
+        prof_container.fadeOut(500);
         about.slideUp( 300 ).delay( 400 ).fadeIn( 400 );
     }
     var x = document.getElementById("myLinks");
@@ -79,6 +114,10 @@ document.getElementById("boomer").addEventListener("click",()=>{
     // mainpage.fadeOut(0);
     // video1.fadeIn(100);
 
+    boomer_active = true;
+    prof_active = false;
+    zoomer_active = false;
+
     intro_container.fadeOut(0);
     zoomer_container.fadeOut(0);
     prof_container.fadeOut(0);
@@ -94,7 +133,9 @@ document.getElementById("boomer").addEventListener("click",()=>{
 document.getElementById("memelord").addEventListener("click",()=>{
     // mainpage.fadeOut(0);
     // video2.fadeIn(100);
-
+    prof_active = false;
+    zoomer_active = true;
+    boomer_active = false;
 
     intro_container.fadeOut(0);
     prof_container.fadeOut(0);
@@ -108,6 +149,9 @@ document.getElementById("memelord").addEventListener("click",()=>{
     document.getElementById("mainpagevideo-zoomer").play();
 })
 document.getElementById("professor").addEventListener("click",()=>{
+    prof_active = true;
+    zoomer_active = false;
+    boomer_active = false;
     intro_container.fadeOut(0);
     zoomer_container.fadeOut(0);
     boomer_container.fadeOut(0);
