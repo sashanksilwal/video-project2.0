@@ -432,6 +432,20 @@ footer{
   width: 40%;
   margin-bottom: 0;
 }
+@media screen and (min-width: 1100px) { 
+
+.flip-box {
+  /* border-radius: 5%; */
+  margin-top: 8%;
+  background-color: transparent;
+  width: 420px;
+  height: 310px;
+  perspective: 1000px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  /* box-shadow: 5px 10px #888888; */
+}
+}
+
 @media screen and (max-width: 1100px) and (min-width: 770px) { 
    .heading h1{
     /* margin-top: 5%; */
