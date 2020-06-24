@@ -153,9 +153,6 @@ a:hover{
   margin-left: 12.5%;
   border: 2px solid black;
   margin-bottom: 5%;
-
-  /* width: 100%;
-	height: 100%; */
 }
 /* -------------------- */
 .flip-box {
@@ -165,8 +162,6 @@ a:hover{
   width: 320px;
   height: 210px;
   perspective: 1000px;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  /* box-shadow: 5px 10px #888888; */
 }
 
 .flip-box-inner {
@@ -281,12 +276,7 @@ a:hover{
   left: 0;
   width: 100%;
   height: 100%;
-  /* position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
- */}
+}
 
 #myBtn {
   position: absolute;
@@ -325,7 +315,6 @@ a:hover{
 }
 #start{
   width: 100%;
-  /* margin-right: auto; */
   margin-left: 100px;
 }
 @media (max-aspect-ratio: 16/9) {
@@ -342,14 +331,10 @@ a:hover{
   width: 100%;
 }
 .heading h1{
-  /* margin-top: 2%; */
-  /* margin-bottom: auto;  */
   font-size: 3rem;
-  /* font-style: na; */
 }
 
 footer{
-  /* position: fixed; */
   height: 5vh;
   bottom: 0;
   left: 0;
@@ -357,8 +342,6 @@ footer{
   background-color: black;
   text-align: center;
   padding: 1%;
-  /* margin-top: 5vh; */
-  /* z-index: -10; */
 
 }
 
@@ -406,7 +389,6 @@ footer{
   display: none;
 }
 .secondpageVideo{
-  /* position: absolute; */
   height: 100%;
   width: 100%;
   text-align: center;
@@ -425,7 +407,6 @@ footer{
 .headingBg{
   background-color: #000;
   height: 10vh;
-  /* z-index: ; */
 }
 .episode1Text{
   margin-top: 2%;
@@ -440,7 +421,6 @@ footer{
 @media screen and (min-width: 1100px) { 
 
 .flip-box {
-  /* border-radius: 5%; */
   margin-top: 8%;
   background-color: transparent;
   width: 420px;
@@ -465,14 +445,9 @@ footer{
     display: none;
   }
   .button{
-    /* margin-top: -5%; */
     margin-left: 19%;
   }
-  /* .mobile-container{
-    display: inline-block;
-    background-color: #212121;
-    width: 100%;
-  } */
+
   #about h2{
     font-size: 1.5rem;
   }
@@ -500,24 +475,21 @@ footer{
     padding: 10%;
   }
   .heading h1{
-    /* font-size: 2rem; */
     display: none;
   }
   .Mheading h1{
-    /* margin-top: 5%; */
     position: absolute;
     top: -8vh;
     left: 30vw;
     font-size: 2rem;
     display: block;
-    /* font-style: na; */
   }  
   .MheadingImg img{
     margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
     height: 8%;
-    width: 50%;
+    width: 70%;
   }
   .menu{
     display: none;
@@ -540,7 +512,6 @@ footer{
   .button{
     width:50px;
     height:50px;
-    /* margin:20px 7px; */
     margin-left: 30px;
     padding: 10px;
     cursor:pointer;
@@ -554,12 +525,10 @@ footer{
     width: 15rem;
     font-size: 1.5rem;
     border: none;
-    /* background: #ddd; */
     color: #fff;
     cursor: pointer;
   }
   .flip-box {
-    /* border-radius: 5%; */
     margin-top: 8%;
     background-color: transparent;
     width: 320px;
@@ -568,10 +537,3 @@ footer{
    
   }
 }
-
-/* .intro_heading{
-  position: relative;
-  left:5%;
-  top: 5%;
-  width: 5%;
-} */
