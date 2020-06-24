@@ -121,8 +121,15 @@ a:hover{
 
 /* ------------------- */
 .epioside1{
-  height:40vh;
-  margin-top: 5%;
+  /* height:40vh; */
+  margin-top: 3%;
+  /* border-bottom: 1px solid black; */
+}
+.epioside2{
+  /* height:40vh; */
+  padding-bottom: 3%;
+  background-color: #bbb;
+  margin-top: 3%;
   /* border-bottom: 1px solid black; */
 }
 #video-container-zoomer, #video-container-boomer, #video-container-prof{
@@ -308,7 +315,7 @@ a:hover{
 }
 .heading h1{
   /* margin-top: 2%; */
-  margin-bottom: auto; 
+  /* margin-bottom: auto;  */
   font-size: 3rem;
   /* font-style: na; */
 }
@@ -322,7 +329,7 @@ footer{
   background-color: black;
   text-align: center;
   padding: 1%;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
   /* z-index: -10; */
 
 }
@@ -400,6 +407,7 @@ footer{
   margin-top: -40px;
   height: 8%;
   width: 40%;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 1100px) and (min-width: 770px) { 
    .heading h1{
