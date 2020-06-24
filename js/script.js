@@ -226,12 +226,7 @@ document.getElementById("Maboutbtn").addEventListener("click",()=>{
     team.fadeOut(0);
     content.fadeOut(500);
 })
-document.getElementById("Mcontactbtn").addEventListener("click",()=>{
-    team.fadeOut(0);
-    about.fadeOut(0);
-    contact.fadeIn(300);
-    content.fadeOut(500);
-})
+
 
 function myFunction(){
     document.getElementById("mainpagevideo").play(); 
@@ -239,10 +234,10 @@ function myFunction(){
     mainbtn.fadeOut(0);
     
     // document.getElementById("mainpagevideo").pause();
-    // document.getElementById("mainpagevideo-zoomer").pause();
-    // document.getElementById("mainpagevideo-boomer").pause();
-    // document.getElementById("mainpagevideo-professor").pause();
-    // document.getElementById("mainpagevideo-end").pause();
+    document.getElementById("mainpagevideo-zoomer").pause();
+    document.getElementById("mainpagevideo-boomer").pause();
+    document.getElementById("mainpagevideo-prof").pause();
+    document.getElementById("mainpagevideo-end").pause();
     // video1.fadeOut(0);
     // video2.fadeOut(0);
     // video3.fadeOut(0);
